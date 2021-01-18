@@ -95,6 +95,7 @@ PROJECT:
 &emsp;&emsp;可运行  ` tensorboard --logdir= ./work_dirs/VIF_Net_Image_Fusion/ `  进行训练可视化。再次训练后最好删除之前的  ` events `  文件。  
 ![SCALARS](https://github.com/ChangeZH/Pytorch_Image_Fusion/blob/main/img/TensorBoard_0.png)
 ![IMAGES](https://github.com/ChangeZH/Pytorch_Image_Fusion/blob/main/img/TensorBoard_1.png)  
+&emsp;&emsp;上图中每三行为一组，前两行为输入数据，第三行为融合结果。  
   
 ### 测试 / Testing  
 &emsp;&emsp;运行  ` python run.py --test `  进行测试。结果会批量保存至指定路径下。  
