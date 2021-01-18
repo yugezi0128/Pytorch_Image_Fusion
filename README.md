@@ -14,11 +14,12 @@
   # 此文件为./core/dataset/crop_datasets.py 45行
   
   if __name__ == '__main__':
-    crop(path_dict={'Vis': '../../datasets/TNO/Vis/', 'Inf': '../../datasets/TNO/Inf/'},
-         crop_sizes=[64, 128, 256],
-         overlap_sizes=[32, 64, 128],
-         save_path='')
+    crop(path_dict={'Vis': '../../datasets/TNO/Vis/', 'Inf': '../../datasets/TNO/Inf/'}, # 数据类型与其路径的对应字典，例如'Vis'数据的路径为'../../datasets/TNO/Vis/'，'Inf'数据的路径为'../../datasets/TNO/Inf/'，类型为字典
+         crop_sizes=[64, 128, 256], # 切片大小，可以多种大小，类型为列表
+         overlap_sizes=[32, 64, 128], # 切片重叠区域大小，与切片大小对应，不能大于对应切片大小，类型为列表
+         save_path='') # 切片保存位置，类型为字符串
   ```  
+  修改后运行  ` python crop_datasets.py `  进行数据切片。
   
 ## 参数设置 / Parameter Setting  
   
