@@ -13,14 +13,16 @@
 &emsp;&emsp;运行  ` python run.py --train `  进行训练。  
 
 #### tensorboardX进行训练可视化  
-&emsp;&emsp;运行  ` tensorboard --logdir= XXX `  进行训练可视化。将XXX替换为模型储存的路径，即` ./config['PROJECT']['save_path']/config['PROJECT']['name']/ `下。例如，config中有如下参数：  
+&emsp;&emsp;运行  ` tensorboard --logdir= XXX `  进行训练可视化。将XXX替换为模型储存的路径，即  
+` ./config['PROJECT']['save_path']/config['PROJECT']['name']/ `  
+下。例如，config中有如下参数：  
 ```
 PROJECT:
   name: 'VIF_Net_Image_Fusion'
   save_path: './work_dirs/'
   weight_path: ''
 ```  
-&emsp;&emsp;可运行  ` tensorboard --logdir= ./work_dirs/VIF_Net_Image_Fusion/ `  进行训练可视化。再次训练后最好删除之前的  ` events `  文件。
+&emsp;&emsp;可运行  ` tensorboard --logdir= ./work_dirs/VIF_Net_Image_Fusion/ `  进行训练可视化。再次训练后最好删除之前的  ` events `  文件。  
 ### 测试 / Testing  
 &emsp;&emsp;运行  ` python run.py --test `  进行测试。  
 
