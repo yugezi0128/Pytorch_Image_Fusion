@@ -9,8 +9,9 @@
   
 ## 训练与测试 / Training And Testing  
   
-#### 训练 / Training  
+### 训练 / Training  
 &emsp;&emsp;运行  ` python run.py --train `  进行训练。  
+&emsp;&emsp;#### tensorboardX进行训练可视化
 #### 测试 / Testing  
 &emsp;&emsp;运行  ` python run.py --test `  进行测试。  
 ## 代码结构 / Code Structure  
