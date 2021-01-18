@@ -8,6 +8,8 @@
 ## 参数设置 / Parameter Setting  
   
 ```python
+# ./config/VIF_Net.yaml
+
 PROJECT: # 项目参数
   name: 'VIF_Net_Image_Fusion' # 项目名称
   save_path: './work_dirs/' # 项目保存路径，训练模型会保存至此路径下的项目名称文件夹中、
