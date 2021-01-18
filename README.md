@@ -7,7 +7,7 @@
 
 ## 代码结构 / Code Structure  
   .  
-├── config  
+├── [config]  
 │   └── VIF_Net.yaml  
 ├── core  
 │   ├── dataset  
