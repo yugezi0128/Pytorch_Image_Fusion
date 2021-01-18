@@ -74,8 +74,10 @@ PROJECT:
 ### 测试 / Testing  
 &emsp;&emsp;运行  ` python run.py --test `  进行测试。结果回批量保存至指定路径下。  
 
-## 代码结构 / Code Structure  
-  
+## 预训练模型 / Pre-training Model
+ - [x] VIF_Net 👉   
+ - [ ] DenseFuse 👉   
+ 
 ## 计划中 / To Do  
  - [x] VIF_Net 👉 https://blog.csdn.net/qq_36449741/article/details/104562999  
  - [ ] DenseFuse 👉 https://blog.csdn.net/qq_36449741/article/details/104776319  
