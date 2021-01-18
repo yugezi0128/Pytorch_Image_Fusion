@@ -13,7 +13,7 @@
 &emsp;&emsp;运行  ` python run.py --train `  进行训练。  
 
 #### tensorboardX进行训练可视化  
-&emsp;&emsp;运行  ` tensorboard --logdir= XXX `  进行训练可视化。将XXX替换为模型储存的路径，即  
+&emsp;&emsp;运行  ` tensorboard --logdir= XXX `  进行训练可视化。将  ` XXX `  替换为模型储存的路径，即  
 ` ./config['PROJECT']['save_path']/config['PROJECT']['name']/ `  
 下。例如，config中有如下参数：  
 ```
