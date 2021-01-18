@@ -7,8 +7,8 @@
 
 ## 参数设置 / Parameter Setting  
   
-```
-PROJECT:
+```python
+PROJECT: # 项目
   name: 'VIF_Net_Image_Fusion'
   save_path: './work_dirs/'
   weight_path: ''
