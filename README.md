@@ -1,18 +1,33 @@
 # Pytorch_Image_Fusion  
 &emsp;&emsp;基于Pytorch框架的多源图像像素级融合，包含针对多种网络的复现。  
 &emsp;&emsp;The pixel level fusion of multi-source images based on the pytorch framework includes the reproduction of multiple networks.  
+  
 ## 环境要求 / Environmental Requirements  
 &emsp;&emsp;Python 3.7  
 &emsp;&emsp;Pytorch 1.6  
-
+  
+## 数据集 / Dataset  
+  TNO数据集下载地址 👉   
+  注意要保证在不同数据类型文件夹下图片名称完全一样。
+  提供切片裁剪程序  ` ./core/dataset/crop_datasets.py `  ，修改：
+  ```python
+  # 此文件为./core/dataset/crop_datasets.py 45行
+  
+  if __name__ == '__main__':
+    crop(path_dict={'Vis': '../../datasets/TNO/Vis/', 'Inf': '../../datasets/TNO/Inf/'},
+         crop_sizes=[64, 128, 256],
+         overlap_sizes=[32, 64, 128],
+         save_path='')
+  ```  
+  
 ## 参数设置 / Parameter Setting  
   
 ```python
-# ./config/VIF_Net.yaml
+# 此文件为./config/VIF_Net.yaml
 
 PROJECT: # 项目参数
   name: 'VIF_Net_Image_Fusion' # 项目名称
-  save_path: './work_dirs/' # 项目保存路径，训练模型会保存至此路径下的项目名称文件夹中、
+  save_path: './work_dirs/' # 项目保存路径，训练模型会保存至此路径下的项目名称文件夹中
 
 TRAIN_DATASET: # 训练数据集参数
   root_dir: './datasets/TNO_crop/' # 训练数据集根目录
