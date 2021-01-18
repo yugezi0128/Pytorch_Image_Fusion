@@ -3,8 +3,10 @@
 &emsp;&emsp;The pixel level fusion of multi-source images based on the pytorch framework includes the reproduction of multiple networks.  
   
 ## 环境要求 / Environmental Requirements  
-&emsp;&emsp;Python 3.7  
-&emsp;&emsp;Pytorch 1.6  
+conda create -n PIF python=3.7  
+conda activate PIF  
+conda install pytorch=1.6.0 torchvision -c pytorch  
+pip install tqdm pyyaml tensorboardX opencv-python  
   
 ## 数据集 / Dataset  
   TNO数据集下载地址 👉   
