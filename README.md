@@ -11,9 +11,19 @@
   
 ### 训练 / Training  
 &emsp;&emsp;运行  ` python run.py --train `  进行训练。  
-#### tensorboardX进行训练可视化
-#### 测试 / Testing  
+
+#### tensorboardX进行训练可视化  
+&emsp;&emsp;运行  ` tensorboard --logdir= XXX `  进行训练可视化。将XXX替换为模型储存的路径，即` ./config['PROJECT']['save_path']/config['PROJECT']['name']/ `下。例如，config中有如下参数：  
+`
+PROJECT:
+  name: 'VIF_Net_Image_Fusion'
+  save_path: './work_dirs/'
+  weight_path: ''
+`
+
+### 测试 / Testing  
 &emsp;&emsp;运行  ` python run.py --test `  进行测试。  
+
 ## 代码结构 / Code Structure  
   
 ## 计划中 / To Do  
