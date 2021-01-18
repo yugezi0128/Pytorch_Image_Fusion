@@ -11,5 +11,5 @@ The pixel level fusion of multi-source images based on the pytorch framework inc
 ## 训练与测试 / Training And Testing
 
 ## 计划中 / To Do
- - [x] VIF_Net
- - [ ] DenseFuse
+&emsp;&emsp; - [x] VIF_Net
+&emsp;&emsp; - [ ] DenseFuse
