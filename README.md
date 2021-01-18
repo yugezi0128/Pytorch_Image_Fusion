@@ -88,7 +88,7 @@ PROJECT:
 ```  
 &emsp;&emsp;可运行  ` tensorboard --logdir= ./work_dirs/VIF_Net_Image_Fusion/ `  进行训练可视化。再次训练后最好删除之前的  ` events `  文件。  
 ### 测试 / Testing  
-&emsp;&emsp;运行  ` python run.py --test `  进行测试。结果回批量保存至指定路径下。  
+&emsp;&emsp;运行  ` python run.py --test `  进行测试。结果会批量保存至指定路径下。  
 
 ## 预训练模型 / Pre-training Model
  - [x] VIF_Net 👉   
