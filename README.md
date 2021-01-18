@@ -11,5 +11,5 @@
 ## 训练与测试 / Training And Testing
 
 ## 计划中 / To Do
- - [x] VIF_Net  
- - [ ] DenseFuse  
+ - [x] VIF_Net 👉 https://blog.csdn.net/qq_36449741/article/details/104562999  
+ - [ ] DenseFuse 👉 https://blog.csdn.net/qq_36449741/article/details/104776319  
