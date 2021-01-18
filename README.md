@@ -3,7 +3,7 @@
 &emsp;&emsp;The pixel level fusion of multi-source images based on the pytorch framework includes the reproduction of multiple networks.  
 ## 环境要求 / Environmental Requirements  
 &emsp;&emsp;Python 3.7  
-Pytorch 1.6  
+&emsp;&emsp;Pytorch 1.6  
 
 ## 代码结构 / Code Structure  
   
