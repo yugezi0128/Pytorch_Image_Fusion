@@ -13,7 +13,7 @@ pip install tqdm pyyaml tensorboardX opencv-python
 ```
   
 ## 数据集 / Dataset  
-  ⚡ TNO数据集下载地址 👉  链接：https://pan.baidu.com/s/1ZPCWQ76nfcvceK0XAnj_Qg  提取码：`PIF0`  
+  ⚡ TNO数据集下载地址 👉  链接：https://pan.baidu.com/s/1-6b-0onDCEPHAMUWyEkmtA  提取码：`PIF0`  
   ⚡ TNO裁剪切片数据集下载地址 👉  
   注意要保证在不同数据类型文件夹下图片名称完全一样。
   提供切片裁剪程序  ` ./core/dataset/crop_datasets.py `  ，修改：
@@ -102,7 +102,7 @@ PROJECT:
 &emsp;&emsp;运行  ` python run.py --test `  进行测试。结果会批量保存至指定路径下。  
 
 ## 预训练模型 / Pre-training Model
- - [x] ⚡ VIF_Net 👉   
+ - [x] ⚡ VIF_Net 👉   链接：https://pan.baidu.com/s/1avjiuNTovsoFmUWd5aPpzg 提取码：PIF2  
  - [ ] ⚡ DenseFuse 👉   
  
 ## 计划中 / To Do  
