@@ -2,12 +2,14 @@
 基于Pytorch框架的多源图像像素级融合，包含针对多种网络的复现。
 
 ## 环境要求 / Environmental Requirements
-&emsp; Python 3.7
+&emsp;&emsp;Python 3.7
 
-## 网络列表 / 
+## 网络列表 / Network List
 
-## 参数设置 / 
+## 代码结构 / Code Structure
 
-## 训练与测试 / 
+## 参数设置 / Parameter Setting
+
+## 训练与测试 / Training And Testing
 
 ## 计划中 / To Do
