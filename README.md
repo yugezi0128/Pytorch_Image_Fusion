@@ -10,9 +10,9 @@
 ## 训练与测试 / Training And Testing  
   
 #### 训练 / Training  
-  运行  ` python run.py --train `  进行训练。  
+&emsp;&emsp;运行  ` python run.py --train `  进行训练。  
 #### 测试 / Testing  
-  运行  ` python run.py --test `  进行测试。  
+&emsp;&emsp;运行  ` python run.py --test `  进行测试。  
 ## 代码结构 / Code Structure  
   
 ## 计划中 / To Do  
