@@ -53,6 +53,7 @@ TRAIN: # 训练参数
   gamma: 0.01 # 训练学习率衰减系数
   milestones: [ 100, 150, 175 ] # 训练学习率衰减的里程碑
   opt: Adam # 训练优化器
+  loss_func: ['VIF_SSIM_Loss', 'TV_Loss'] # 训练使用的损失函数
   val_interval: 1 # 训练每过多少代数后保存权重
   debug_interval: 100 # 训练每过多少批次后进行可视化，结果可视化在tensorboard中
   resume: None # 训练停止后继续训练加载权重路径
