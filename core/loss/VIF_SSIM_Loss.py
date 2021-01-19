@@ -16,7 +16,7 @@ class VIF_SSIM_Loss(nn.Module):
         self.avg_kernal = torch.ones(num_channels, 1, self.kernal_size, self.kernal_size) / (self.kernal_size) ** 2
         self.avg_kernal = self.avg_kernal.to(device)
 
-    def forward(self, input_images, fusion_images):
+    def forward(self, input_images, output_images):
         vis_images, inf_images = input_images['Vis'], input_images['Inf']
         batch_size, num_channels = vis_images.shape[0], vis_images.shape[1]
 
@@ -28,13 +28,13 @@ class VIF_SSIM_Loss(nn.Module):
         inf_images_var = torch.abs(F.conv2d(inf_images ** 2, self.avg_kernal, stride=self.kernal_size,
                                             groups=num_channels) - inf_images_mean ** 2)
 
-        fusion_images_mean = F.conv2d(fusion_images, self.avg_kernal, stride=self.kernal_size, groups=num_channels)
-        fusion_images_var = torch.abs(F.conv2d(fusion_images ** 2, self.avg_kernal, stride=self.kernal_size,
+        fusion_images_mean = F.conv2d(output_images, self.avg_kernal, stride=self.kernal_size, groups=num_channels)
+        fusion_images_var = torch.abs(F.conv2d(output_images ** 2, self.avg_kernal, stride=self.kernal_size,
                                                groups=num_channels) - fusion_images_mean ** 2)
 
-        vis_fusion_images_var = F.conv2d(vis_images * fusion_images, self.avg_kernal, stride=self.kernal_size,
+        vis_fusion_images_var = F.conv2d(vis_images * output_images, self.avg_kernal, stride=self.kernal_size,
                                          groups=num_channels) - vis_images_mean * fusion_images_mean
-        inf_fusion_images_var = F.conv2d(inf_images * fusion_images, self.avg_kernal, stride=self.kernal_size,
+        inf_fusion_images_var = F.conv2d(inf_images * output_images, self.avg_kernal, stride=self.kernal_size,
                                          groups=num_channels) - inf_images_mean * fusion_images_mean
 
         C = torch.ones_like(fusion_images_mean) * self.c

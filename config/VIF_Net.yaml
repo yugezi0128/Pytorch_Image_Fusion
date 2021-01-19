@@ -17,6 +17,7 @@ TRAIN:
   gamma: 0.01
   milestones: [ 100, 150, 175 ]
   opt: Adam
+  loss_func: ['VIF_SSIM_Loss', 'TV_Loss']
   val_interval: 1
   debug_interval: 100
   resume: None

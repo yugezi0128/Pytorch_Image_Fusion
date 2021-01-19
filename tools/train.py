@@ -29,8 +29,7 @@ def train(model, train_datasets, test_datasets, configs):
     train_dataloader = DataLoader(train_datasets, batch_size=configs['TRAIN']['batch_size'], shuffle=True)
     train_num_iter = len(train_dataloader)
 
-    ssim_loss_func = VIF_SSIM_Loss()
-    tv_loss_func = TV_Loss()
+    loss_func = [eval(l)() for l in configs['TRAIN']['loss_func']]
 
     all_iter = 0
     for epoch in range(start_epoch, configs['TRAIN']['max_epoch'] + 1):
@@ -46,11 +45,9 @@ def train(model, train_datasets, test_datasets, configs):
 
                 fusion_image = model(data)
 
-                ssim_loss = ssim_loss_func(data, fusion_image)
-                tv_loss = tv_loss_func(data, fusion_image)
+                loss = [l(data, fusion_image) * configs['TRAIN']['loss_weights'][loss_func.index(l)] for l in loss_func]
 
-                loss_batch = configs['TRAIN']['loss_weights'][0] * ssim_loss + \
-                             configs['TRAIN']['loss_weights'][1] * tv_loss
+                loss_batch = sum(loss)
 
                 loss_epoch += loss_batch.item()
                 optimizer.zero_grad()
