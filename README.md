@@ -14,7 +14,7 @@ pip install tqdm pyyaml tensorboardX opencv-python
   
 ## 数据集 / Dataset  
   ⚡ TNO数据集下载地址 👉  链接：https://pan.baidu.com/s/1-6b-0onDCEPHAMUWyEkmtA  提取码：`PIF0`  
-  ⚡ TNO裁剪切片数据集下载地址 👉  
+  ⚡ TNO裁剪切片数据集下载地址 👉  链接：https://pan.baidu.com/s/1CEZj9MSz4Noz8Fj7GMG-bw  提取码：`PIF1`  
   注意要保证在不同数据类型文件夹下图片名称完全一样。
   提供切片裁剪程序  ` ./core/dataset/crop_datasets.py `  ，修改：
   ```python
